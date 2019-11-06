@@ -7,20 +7,24 @@
 
 
 #contact-body {
-    background-color: #B9B6B6;
+    padding-top: 50px;
+    padding-bottom: 150px;
+    background-image: url("../../../../assets/bakcgroundContactMonitora.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     color: black;
+    font-size: 30px;
+    font-family:"Leelawadee-ui";
     display: flex;
     align-items: center;
     align-content: center;
     text-align: center;
     flex-direction: column;
-    font-size: 40px;
-    font-family:"Leelawadee-ui";
 }
 
 #contact-body .img-contact{
     margin-top: 50px;
-    margin-bottom: 50px;
     width: 75%;
     
 }
@@ -35,11 +39,78 @@
     flex-direction: row;
     flex-wrap: wrap;
     text-align: justify;
-    
 }
 
 .contact-column-content {
-    width: 600px;
-    margin-left: 40px;
+    flex: 1;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.one {
+    margin-top: 130px;
+}
+
+.two, .tree{
+    margin-top: 35px;
+}
+
+
+.dir{
+    margin-left: 50px;
+}
+
+.esq{
+    margin-right: 50px;
+}
+
+/* Telefones em paisagem e abaixo */
+@media (max-width: 480px) { 
+    #contact-body {
+        font-size: 22px;
+    }    
+    #contact-body h2{
+        font-size: 22px;
+    }   
+}
+
+/* Tablet em retrato a paisagem e desktop */
+@media (max-width: 979px) {
+
+
+    #contact-body .img-contact{
+        margin-top: 30px;
+        width: 85%;
+        
+    }
+    
+    #contact-body img{
+        width: 85%;
+        object-fit: fill;
+    }
+
+    #contact-body {
+        padding-top: 50px;
+    }
+    .dir{
+        margin-left: 0px;
+    }
+    
+    .esq{
+        margin-top: 50px;
+        margin-right: 0px;
+    }
+
+    .one {
+        margin-top: 50px;
+    }
+
+    .contact-column {    
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: justify;
+    }
 }
 

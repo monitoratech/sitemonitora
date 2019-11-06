@@ -1,26 +1,30 @@
 import React from 'react';
-import styles from './styles.css';
+import Button from '../Button';
+
+import './styles.css';
 
 export default class FormContact extends React.Component {
 
     render() {
         return (
             <>
-                <form>
-                    Nome
+                <div id="form-contact">
+                    <form>
+                     <h1>Nome</h1>
                     <input type="text" name="name" />
-                    E-mail
+                    <h1>E-mail</h1>
                     <input type="text" name="name" />
-                    Telefone
+                    <h1> Telefone</h1>
                     <input type="text" name="name" />
-                    Assunto
+                    <h1>Assunto</h1>
                     <input type="text" name="name" />
-                    Mensagem
+                    <h1>Mensagem</h1>
                     <textarea id="msg" name="msg"
-                        rows="5" cols="33">
-                        Mensagem...
-                    </textarea>
-                </form>
+                            rows="5" cols="33" />
+                    </form>
+
+                    <Button>Enviar</Button>
+                </div>
             </>
         );
     }

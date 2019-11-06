@@ -1,0 +1,34 @@
+
+@font-face {
+    font-family: "Leelawadee-ui";
+    src: url("../../assets/fonts/leelawadee-ui.ttf") format("truetype");
+}
+
+
+#form-contact input{
+    width: 100%;
+    background-color: transparent;    
+    border: 3px solid #707070;
+    margin-bottom: 30px;
+    height: 75px;
+}
+
+#form-contact textarea{
+    width: 100%;
+    background-color: transparent;    
+    border: 3px solid #707070
+}
+
+#form-contact h1{
+    font-size: 30px;
+    font-family:"Leelawadee-ui";
+    letter-spacing: 5px;
+    margin-left: 15px;
+}
+
+
+#form-contact Button{
+    width: 170px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
