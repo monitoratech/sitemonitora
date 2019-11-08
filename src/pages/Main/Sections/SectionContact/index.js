@@ -18,7 +18,7 @@ const SectionContact = () => {
                 <div className="contact-column">
                     <div className="contact-column-content dir">
                         <h2 className="text-body one">
-                            Economia, segurança, transparência dos dados e
+                            Economia, segurança, transparência de dados e
                             controle do seu veículo na palma de
                             suas mãos!
                         </h2>
