@@ -4,9 +4,24 @@ import MaskedInput from 'react-text-mask';
 import Overlay from 'react-bootstrap/Overlay';
 import Tooltip from 'react-bootstrap/Tooltip';
 import { findDOMNode } from 'react-dom';
+import Lottie from 'react-lottie';
 
 import { validateEmail, validateName } from '../../utils/funcsValidations';
+import sendEmail from '../../utils/funcSendMail';
+
+
+import sucessAnimation from '../../assets/animations/sucessAnimation.json';
 import './styles.css';
+
+
+const defaultOptions = {
+    loop: false,
+    autoplay: true,
+    animationData: sucessAnimation,
+    rendererSettings: {
+        preserveAspectRatio: 'xMidYMid slice'
+    }
+};
 
 
 export default class FormContact extends React.Component {
@@ -26,6 +41,7 @@ export default class FormContact extends React.Component {
         this.focusInputAssunto = this.focusInputAssunto.bind(this);
         this.focusInputMsg = this.focusInputMsg.bind(this);
     }
+
 
     focusInputName() {
         this.inputName.current.focus();
@@ -52,6 +68,7 @@ export default class FormContact extends React.Component {
         msgAlert: "",
         visibleAlert: false,
         target: null,
+        sucess: false
     };
 
     handleTxt = async (event) => {
@@ -59,6 +76,10 @@ export default class FormContact extends React.Component {
             [event.target.name]: event.target.value
         })
     };
+
+    finalAnimation = e => {
+        console.log(e);
+    }
 
     clickButton = async () => {
         var msg = "";
@@ -70,8 +91,10 @@ export default class FormContact extends React.Component {
                 if (this.state.tel.length >= 14) {
                     if (this.state.assunto.length > 0) {
                         if (this.state.msg.length > 1) {
-                            console.log("Mensagem enviada");
-                            this.clearAll();
+                            this.setState({ sucess: true });
+                            await sendEmail(this.state.name, this.state.email, this.state.tel, this.state.assunto,
+                              this.state.msg);
+                              
                         } else {
                             tar = this.inputMsg.current;
                             this.focusInputMsg();
@@ -161,10 +184,30 @@ export default class FormContact extends React.Component {
 
                         <h1>Mensagem</h1>
                         <textarea ref={this.inputMsg} id="msg" name="msg"
-                            rows="5" cols="33" onChange={this.handleTxt} maxLength="500" value={this.state.msg}/>
+                            rows="5" cols="33" onChange={this.handleTxt} maxLength="500" value={this.state.msg} />
                     </form>
 
-                    <Button onClick={this.clickButton}>Enviar</Button>
+
+
+                    <Button onClick={this.clickButton}>Enviar <div className="animation-lottie"><Lottie
+                        options={defaultOptions}
+                        height={200}
+                        width={200}
+                        isStopped={!this.state.sucess}
+                        speed={2.5}
+                        eventListeners={[
+                            {
+                                eventName: 'complete',
+                                callback: () => {
+                                    this.setState({ sucess: false });
+                                    this.clearAll();
+                                },
+                            },
+                        ]}
+                    />
+                    </div></Button>
+
+
 
                     <Overlay target={this.state.target} show={this.state.visibleAlert} placement="top">
                         {props => (
