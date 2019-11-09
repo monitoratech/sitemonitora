@@ -1,5 +1,3 @@
-
-
 @font-face {
     font-family: "Leelawadee-ui";
     src: url("../../../../assets/fonts/leelawadee-ui.ttf") format("truetype");
@@ -24,9 +22,18 @@
 }
 
 #contact-body .img-contact{
-    margin-top: 50px;
+    margin-top: 450px;
     width: 75%;
-    
+}
+
+.top{
+    opacity: 0;
+    transform: scale(0.1);
+    transition: 1.5s;
+}
+.animationTop {
+    opacity: 1;
+    transform: scale(1);
 }
 
 #contact-body img{
@@ -58,12 +65,29 @@
 
 
 .dir{
+    opacity: 0;
+    transform: translate3d(-120%, 0, 0);
+    transition: 1.5s;
     margin-left: 50px;
 }
 
+.animationDir{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
 .esq{
+    opacity: 0;
+    transform: translate3d(+120%, 0, 0);
+    transition: 1.5s;
     margin-right: 50px;
 }
+
+.animationEsq{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
 
 /* Telefones em paisagem e abaixo */
 @media (max-width: 480px) { 

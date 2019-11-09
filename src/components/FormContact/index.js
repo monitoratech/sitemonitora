@@ -71,6 +71,7 @@ export default class FormContact extends React.Component {
                     if (this.state.assunto.length > 0) {
                         if (this.state.msg.length > 1) {
                             console.log("Mensagem enviada");
+                            this.clearAll();
                         } else {
                             tar = this.inputMsg.current;
                             this.focusInputMsg();
@@ -109,16 +110,34 @@ export default class FormContact extends React.Component {
         });
     }
 
+    clearAll = () => {
+        this.setState({
+            name: "",
+            email: "",
+            tel: "",
+            assunto: "",
+            msg: ""
+        });
+    }
+
     render() {
         return (
             <>
                 <div id="form-contact">
                     <form>
                         <h1>Nome</h1>
-                        <input ref={this.inputName} type="text" name="name" onChange={this.handleTxt} maxLength="50" />
+                        <input ref={this.inputName} type="text" name="name" onChange={this.handleTxt} maxLength="50" value={this.state.name} />
 
                         <h1>E-mail</h1>
-                        <input ref={this.inputEmail} type="text" name="email" onChange={this.handleTxt} maxLength="50" />
+
+                        <input
+                            ref={this.inputEmail}
+                            type="text"
+                            name="email"
+                            onChange={this.handleTxt}
+                            maxLength="50"
+                            value={this.state.email}
+                        />
 
                         <h1> Telefone</h1>
 
@@ -128,14 +147,21 @@ export default class FormContact extends React.Component {
                             mask={['(', /[1-9]/, /\d/, ')', ' ', /\d/, /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]}
                             guide
                             onChange={this.handleTxt}
+                            value={this.state.tel}
                         />
 
                         <h1>Assunto</h1>
-                        <input ref={this.inputAssunto} type="text" name="assunto" onChange={this.handleTxt} maxLength="50" />
+                        <input
+                            ref={this.inputAssunto}
+                            type="text" name="assunto"
+                            onChange={this.handleTxt}
+                            maxLength="50"
+                            value={this.state.assunto}
+                        />
 
                         <h1>Mensagem</h1>
                         <textarea ref={this.inputMsg} id="msg" name="msg"
-                            rows="5" cols="33" onChange={this.handleTxt} maxLength="500" />
+                            rows="5" cols="33" onChange={this.handleTxt} maxLength="500" value={this.state.msg}/>
                     </form>
 
                     <Button onClick={this.clickButton}>Enviar</Button>
