@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import SectionContact from './Sections/SectionContact';
+import SectionFooter from './Sections/SectionFooter';
 
 class Main extends Component {
 
@@ -7,6 +8,7 @@ class Main extends Component {
     return (
       <>
         <SectionContact />
+        <SectionFooter />
       </>
     );
   }

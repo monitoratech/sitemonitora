@@ -1,0 +1,157 @@
+
+
+#section-footer{
+    background-color: black;
+}
+
+.footer-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+#section-footer .footer-img{
+    margin-left: 150px;
+    margin-top: 190px;
+    width: 75%;
+}
+
+
+.footer-img img{
+    width: 75%;
+    object-fit: fill;
+}
+
+.footer-component {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-img-contact {
+    margin-top: 2px;
+    width: 30px;
+    height: 30px;
+}
+
+
+.footer-img-contact img{
+    width: 30px;
+    height: 30px;
+    object-fit: fill;
+}
+
+#section-footer h2{
+    color: white;
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+#section-footer h1{
+    margin-left: -30px;
+    color: #78C0FF;
+    margin-top: 175px;
+}
+
+.footer-column-dir{
+    margin-right: 150px;
+}
+
+.footer-bottom {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 90px;
+}
+
+.footer-img-bottom {
+    margin: 30px;
+    width: 70px;
+    height: 70px;
+}
+
+.footer-img-bottom img{
+    width: 70px;
+    height: 70px;
+    object-fit: fill;
+}
+
+.footer-credit {
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: #2E353A;
+}
+#section-footer h3{
+    font-size: 12px;
+}
+
+@media (max-width: 480px) { 
+    #section-footer h1{
+        font-size: 25px;
+    }
+    #section-footer h2{
+        font-size: 20px;
+    }
+    #section-footer h3{
+        font-size: 8px;
+    }
+
+    .footer-img-bottom {
+        margin: 10px;
+        width: 70px;
+        height: 70px;
+    }
+    
+    .footer-img-bottom img{
+        width: 70px;
+        height: 70px;
+        object-fit: fill;
+    }
+    
+}
+
+/* Tablet em retrato a paisagem e desktop */
+@media (max-width: 979px) {
+    .footer-column {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-component{
+        margin: 5px;
+        font-size: 20px;        
+    }
+    .footer-column-dir{
+        margin-left: 55px;
+        margin-right: 15px;
+    }
+
+    #section-footer h1{
+        margin-top: 70px;
+    }
+    #section-footer .footer-img{
+        margin-top: 150px;
+        margin-left: 12%;
+    }
+
+    #section-footer .footer-img{
+        width: 85%;
+    }
+    .footer-img img{
+        width: 85%;
+        object-fit: fill;
+    }
+
+    .footer-bottom {
+        margin-top: 40px;
+        margin-bottom: -30px;
+    }
+}
