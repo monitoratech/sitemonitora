@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3fc2903885c8f057e53ec53b5f134c6e",
+    "revision": "c10db867e11d5aff12d9d55d8d55bd1b",
     "url": "/sitemonitora/index.html"
   },
   {
-    "revision": "4f57860a8c69e8c68d8e",
+    "revision": "28bdc21c5e1ae2e289f4",
     "url": "/sitemonitora/static/css/main.b3857b34.chunk.css"
   },
   {
-    "revision": "3f095e51e1a4cd1c9820",
-    "url": "/sitemonitora/static/js/2.807c55d6.chunk.js"
+    "revision": "b91f552a3b1545004cbd",
+    "url": "/sitemonitora/static/js/2.6077a2df.chunk.js"
   },
   {
-    "revision": "4f57860a8c69e8c68d8e",
-    "url": "/sitemonitora/static/js/main.c241fa42.chunk.js"
+    "revision": "28bdc21c5e1ae2e289f4",
+    "url": "/sitemonitora/static/js/main.925ff797.chunk.js"
   },
   {
-    "revision": "c57779e4209fd7f30b89",
-    "url": "/sitemonitora/static/js/runtime-main.2cc92a1c.js"
+    "revision": "0f97a71df9173f63fdba",
+    "url": "/sitemonitora/static/js/runtime-main.fc3aa86b.js"
   },
   {
     "revision": "af0ba8ed3e06a90d126aedfa9e400066",
