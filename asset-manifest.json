@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/sitemonitora/static/css/main.b3857b34.chunk.css",
+    "main.js": "/sitemonitora/static/js/main.c241fa42.chunk.js",
+    "main.js.map": "/sitemonitora/static/js/main.c241fa42.chunk.js.map",
+    "runtime-main.js": "/sitemonitora/static/js/runtime-main.2cc92a1c.js",
+    "runtime-main.js.map": "/sitemonitora/static/js/runtime-main.2cc92a1c.js.map",
+    "static/js/2.807c55d6.chunk.js": "/sitemonitora/static/js/2.807c55d6.chunk.js",
+    "static/js/2.807c55d6.chunk.js.map": "/sitemonitora/static/js/2.807c55d6.chunk.js.map",
+    "index.html": "/sitemonitora/index.html",
+    "precache-manifest.39f1201df8c18dc321d60ce40925e5ca.js": "/sitemonitora/precache-manifest.39f1201df8c18dc321d60ce40925e5ca.js",
+    "service-worker.js": "/sitemonitora/service-worker.js",
+    "static/css/main.b3857b34.chunk.css.map": "/sitemonitora/static/css/main.b3857b34.chunk.css.map",
+    "static/media/LogoNameFraseBlack.png": "/sitemonitora/static/media/LogoNameFraseBlack.af0ba8ed.png",
+    "static/media/LogoNameFraseBlue@0,5x.png": "/sitemonitora/static/media/LogoNameFraseBlue@0,5x.914aa985.png",
+    "static/media/styles.css": "/sitemonitora/static/media/leelawadee-ui.4a941d64.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2cc92a1c.js",
+    "static/js/2.807c55d6.chunk.js",
+    "static/css/main.b3857b34.chunk.css",
+    "static/js/main.c241fa42.chunk.js"
+  ]
+}
