@@ -4,6 +4,7 @@
   "homepage": "https://monitoratech.github.io/sitemonitora",
   "private": true,
   "dependencies": {
+    "gh-pages": "^2.2.0",
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
     "mongoose": "^5.7.9",
@@ -39,8 +40,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^2.2.0"
   }
 }
