@@ -1,4 +1,3 @@
-const mongoose = require("mongoose");
 var nodemailer = require('nodemailer');
 
 
@@ -36,5 +35,4 @@ export default function sendMail(name, email, tel, theme, msg) {
 
         return 0;
     })
-
 }
