@@ -1,7 +1,7 @@
 {
   "name": "sitemonitora",
   "version": "0.1.0",
-  "homepage": "https://www.omonitora.com",
+  "homepage": "https://omonitora.com",
   "private": true,
   "dependencies": {
     "gh-pages": "^2.2.0",
