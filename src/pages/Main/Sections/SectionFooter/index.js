@@ -34,14 +34,14 @@ const SectionFooter = () => {
                             <div className="footer-img-contact">
                                 <img src={tel} alt="logo" />
                             </div>
-                            <h2>+55 (43) 99999-9999</h2>
+                            <h2>+55 (43) 99910-4977</h2>
                         </div>
 
                         <div className="footer-component">
                             <div className="footer-img-contact">
                                 <img src={mail} alt="logo" />
                             </div>
-                            <h2>contato@monitora.com</h2>
+                            <h2>contato@omonitora.com</h2>
                         </div>
                     </div>
                 </div>

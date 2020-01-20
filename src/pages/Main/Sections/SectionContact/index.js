@@ -61,9 +61,9 @@ export default class SectionContact extends React.Component {
                          </h2>
 
                             <ul className="text-body tree">
-                                <li>(99) 99999-9999</li>
-                                <li>(99) 99999-9999</li>
-                                <li>contato@monitora.com.br</li>
+                                <li>(43) 99910-4977</li>
+                                <li>(43) 99662-5152</li>
+                                <li>contato@omonitora.com.br</li>
                             </ul>
                         </div>
                         <div className={"contact-column-content esq " + this.state.classNameEsq}>
