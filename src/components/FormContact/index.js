@@ -7,7 +7,7 @@ import { findDOMNode } from 'react-dom';
 import Lottie from 'react-lottie';
 
 import { validateEmail, validateName } from '../../utils/funcsValidations';
-//import sendEmail from '../../utils/funcSendMail';
+import sendEmail from '../../utils/funcSendMail';
 
 
 import sucessAnimation from '../../assets/animations/sucessAnimation.json';
@@ -92,8 +92,8 @@ export default class FormContact extends React.Component {
                     if (this.state.assunto.length > 0) {
                         if (this.state.msg.length > 1) {
                             this.setState({ sucess: true });
-                          // await sendEmail(this.state.name, this.state.email, this.state.tel, this.state.assunto,
-                            //  this.state.msg);
+                           await sendEmail(this.state.name, this.state.email, this.state.tel, this.state.assunto,
+                             this.state.msg);
                               
                         } else {
                             tar = this.inputMsg.current;
@@ -122,7 +122,7 @@ export default class FormContact extends React.Component {
         } else {
             tar = this.inputName.current;
             this.focusInputName();
-            msg = "Informe um nome válido";
+            msg = "Insira seu nome";
             visible = true;
         }
 

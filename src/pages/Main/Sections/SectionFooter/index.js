@@ -47,16 +47,16 @@ const SectionFooter = () => {
                 </div>
 
                 <div className="footer-bottom">
-                    <div className="footer-img-bottom">
+                    <a className="footer-img-bottom" href="https://www.facebook.com/monitoraa/" target="_blank" rel="noopener noreferrer">
                         <img src={face_icon} alt="logo" />
-                    </div>
-                    <div className="footer-img-bottom">
+                    </a>
+                    <a className="footer-img-bottom" href="mailto:contato@omonitora.com">
                         <img src={mail_icon} alt="logo" />
-                    </div>
+                    </a>
 
-                    <div className="footer-img-bottom">
+                    <a className="footer-img-bottom" href="https://www.instagram.com/omonitoraa/" target="_blank" rel="noopener noreferrer">
                         <img src={insta_icon} alt="logo" />
-                    </div>
+                    </a>
                 </div>
 
                 <div className="footer-credit">

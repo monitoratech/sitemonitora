@@ -22,7 +22,7 @@ export default class SectionContact extends React.Component {
     }
 
     handleScrooll() {
-        if (document.documentElement.scrollTop > ($('.img-contact').offset().top - window.innerHeight * 0.5))  {
+        if ($('img-contact') && document.documentElement.scrollTop > ($('.img-contact').offset().top - window.innerHeight * 0.5))  {
             this.setState({
                 classNameDir: "animationDir",
                 classNameEsq: "animationEsq",
