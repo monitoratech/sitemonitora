@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.95361708.chunk.css",
-    "main.js": "/static/js/main.4de72fcc.chunk.js",
-    "main.js.map": "/static/js/main.4de72fcc.chunk.js.map",
+    "main.js": "/static/js/main.255b3bb7.chunk.js",
+    "main.js.map": "/static/js/main.255b3bb7.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.244791af.js",
     "runtime-main.js.map": "/static/js/runtime-main.244791af.js.map",
     "static/js/2.b4e92444.chunk.js": "/static/js/2.b4e92444.chunk.js",
     "static/js/2.b4e92444.chunk.js.map": "/static/js/2.b4e92444.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e0a76c9ffb5100aba3278ba3ac10e0a7.js": "/precache-manifest.e0a76c9ffb5100aba3278ba3ac10e0a7.js",
+    "precache-manifest.ac40a8c3d9466159dd00396d5dbdde1c.js": "/precache-manifest.ac40a8c3d9466159dd00396d5dbdde1c.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.95361708.chunk.css.map": "/static/css/main.95361708.chunk.css.map",
     "static/media/LogoNameFraseBlack.png": "/static/media/LogoNameFraseBlack.af0ba8ed.png",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.244791af.js",
     "static/js/2.b4e92444.chunk.js",
     "static/css/main.95361708.chunk.css",
-    "static/js/main.4de72fcc.chunk.js"
+    "static/js/main.255b3bb7.chunk.js"
   ]
 }
